@@ -16,8 +16,7 @@ contract GAMEE is ERC20WithOperators {
     uint8 public constant override decimals = 18;
 
     constructor(address[] memory holders, uint256[] memory amounts) public ERC20WithOperators() {
-        require(holders.length == amounts.length, "GAMEE: wrong arguments");
-        for (uint256 i = 0; i < holders.length; ++i) {
+        require(holders.length == amounts.length, "GAMEE: inconsistent arrays");
             _mint(holders[i], amounts[i]);
         }
     }
