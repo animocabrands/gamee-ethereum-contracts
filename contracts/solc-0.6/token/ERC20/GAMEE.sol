@@ -11,7 +11,7 @@ contract GAMEE is ERC20WithOperators {
     // solhint-disable-next-line const-name-snakecase
     string public constant override name = "GAMEE";
     // solhint-disable-next-line const-name-snakecase
-    string public constant override symbol = "GAMEE";
+    string public constant override symbol = "GMEE";
     // solhint-disable-next-line const-name-snakecase
     uint8 public constant override decimals = 18;
 
