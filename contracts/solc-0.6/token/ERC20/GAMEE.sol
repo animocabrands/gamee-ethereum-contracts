@@ -17,6 +17,7 @@ contract GAMEE is ERC20WithOperators {
 
     constructor(address[] memory holders, uint256[] memory amounts) public ERC20WithOperators() {
         require(holders.length == amounts.length, "GAMEE: inconsistent arrays");
+        for (uint256 i = 0; i != holders.length; ++i) {
             _mint(holders[i], amounts[i]);
         }
     }
