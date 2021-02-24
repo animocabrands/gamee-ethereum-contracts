@@ -11,13 +11,13 @@ contract GAMEE is ERC20WithOperators {
     // solhint-disable-next-line const-name-snakecase
     string public constant override name = "GAMEE";
     // solhint-disable-next-line const-name-snakecase
-    string public constant override symbol = "GAMEE";
+    string public constant override symbol = "GMEE";
     // solhint-disable-next-line const-name-snakecase
     uint8 public constant override decimals = 18;
 
     constructor(address[] memory holders, uint256[] memory amounts) public ERC20WithOperators() {
-        require(holders.length == amounts.length, "GAMEE: wrong arguments");
-        for (uint256 i = 0; i < holders.length; ++i) {
+        require(holders.length == amounts.length, "GAMEE: inconsistent arrays");
+        for (uint256 i = 0; i != holders.length; ++i) {
             _mint(holders[i], amounts[i]);
         }
     }
