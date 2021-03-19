@@ -1,4 +1,4 @@
-TOWER token is based on `ERC20WithOperators`, you can find the audit report from the link below.
+GAMEE token (GMEE) is based on `ERC20WithOperators`, you can find the audit report from the link below.
 
 The contract source code is nearly identical to the REVV contract source code
 
